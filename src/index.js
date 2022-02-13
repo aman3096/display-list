@@ -3,17 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+// import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
-const client = new ApolloClient({
-  uri: "https://swapi-graphql.netlify.app/.netlify/functions/index",
-  cache: new InMemoryCache(),
-  credentials:'omit'
-});
+// const client = new ApolloClient({
+//   uri: "https://swapi-graphql.netlify.app/.netlify/functions/index",
+//   cache: new InMemoryCache(),
+//   credentials:'omit'
+// });
 ReactDOM.render(
-   
-      <App />
-   ,
+      <App />,
   document.getElementById('root')
 );
 

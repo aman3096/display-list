@@ -15,7 +15,7 @@ const Detail = ()=>{
         The various species invlolved were 
          <ul className="list-group list-group-flush">
          {dats.speciesConnection.species.map((ele,index)=>
-            <li className={index%2==1?"list-group-item list-group-item-dark":"list-group-item list-group-item-light"}>
+            <li className={index%2===1?"list-group-item list-group-item-dark":"list-group-item list-group-item-light"}>
                 {ele.name} is {ele.classification} {ele.homeworld?.name.length>0 &&`and is from ${ele.homeworld?.name} homeland`}
             </li>
             

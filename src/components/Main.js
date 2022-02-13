@@ -31,7 +31,7 @@ function Main(){
       <div className="container" >
         <center data-testid="main-2"><h1>Star Wars All Films</h1></center>
         <ul className="list-group list-group-flush">
-          {data.allFilms.films.map((film,index)=><li className={index%2==1?"list-group-item list-group-item-dark":"list-group-item list-group-item-light"} key={"film-"+film.title}><Link to="/details" state={{dats:film}}>{film.title}</Link></li>)}
+          {data.allFilms.films.map((film,index)=><li className={index%2===1?"list-group-item list-group-item-dark":"list-group-item list-group-item-light"} key={"film-"+film.title}><Link to="/details" state={{dats:film}}>{film.title}</Link></li>)}
         </ul>
       </div>
     );
